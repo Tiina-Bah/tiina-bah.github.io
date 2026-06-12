@@ -197,12 +197,14 @@
     }
     .dashboard-card h3 { font-size: 1rem; margin-bottom: 0.5rem; }
     .dashboard-card p { font-size: 0.85rem; opacity: 0.8; margin-bottom: 1rem; }
-    .dashboard-placeholder {
-      background: rgba(255,255,255,0.08); border: 2px dashed rgba(255,255,255,0.3);
-      border-radius: 8px; height: 180px; display: flex; align-items: center; justify-content: center;
-      flex-direction: column; gap: 0.5rem; margin-bottom: 1rem;
+    .dashboard-iframe-wrap {
+      position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden;
+      border-radius: 8px; margin-bottom: 1rem; background: rgba(0,0,0,0.2);
     }
-    .dashboard-placeholder span { opacity: 0.5; font-size: 0.85rem; }
+    .dashboard-iframe-wrap iframe {
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+      border: none; border-radius: 8px;
+    }
 
     /* SOFT SKILLS */
     .softskills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; }
@@ -672,22 +674,20 @@
   </div>
   <div class="dashboards-grid">
     <div class="dashboard-card">
-      <h3>📡 Dashboard Veille Métier & Technologique</h3>
-      <p>Panorama des tendances BI 2024-2026 : évolution des outils data, tendances sectorielles, comparatif des solutions (Power BI vs Tableau vs Looker), veille aéronautique.</p>
-      <div class="dashboard-placeholder">
-        <span style="font-size:2rem">📊</span>
-        <span>→ Lien Power BI à intégrer ici</span>
+      <h3>📊 Bottleneck — Analyse des performances</h3>
+      <p>Dashboard multi-pages (Overview, Produit & Web, Stock & Commande, Promo & Vente, Avis client, Recommandations) — données mises à jour juin 2026.</p>
+      <div class="dashboard-iframe-wrap">
+        <iframe title="Modestine BAH_PBI_062026_V2" src="https://app.powerbi.com/reportEmbed?reportId=021f45db-b486-46d6-bd75-b6588521f2cb&autoAuth=true&ctid=5ca4c236-106c-49b5-93a4-e031f2bf190e&actionBarEnabled=true&reportCopilotInEmbed=true" allowFullScreen="true"></iframe>
       </div>
-      <a href="#" class="btn btn-outline" style="font-size:0.85rem">Voir le dashboard interactif →</a>
+      <a href="https://app.powerbi.com/links/nHGIfd4X4J?ctid=5ca4c236-106c-49b5-93a4-e031f2bf190e&pbi_source=linkShare" target="_blank" class="btn btn-outline" style="font-size:0.85rem">Ouvrir dans Power BI →</a>
     </div>
     <div class="dashboard-card">
-      <h3>👤 Dashboard Présentation de Profil</h3>
-      <p>Synthèse visuelle de mon parcours BI Analyst : timeline des expériences, cartographie des compétences, bilan des 9 projets, indicateurs clés du parcours.</p>
-      <div class="dashboard-placeholder">
-        <span style="font-size:2rem">📈</span>
-        <span>→ Lien Power BI à intégrer ici</span>
+      <h3>📈 Tableau de bord RH — 4 pages</h3>
+      <p>Dashboard social multi-pages : indicateurs RH clés, masse salariale, effectifs, absentéisme et rémunération — avril 2026.</p>
+      <div class="dashboard-iframe-wrap">
+        <iframe title="Modestine_Bah_4_tableau de bord_042026" src="https://app.powerbi.com/reportEmbed?reportId=18286d13-ccbf-4f4f-9f23-fcc81beb00ce&autoAuth=true&ctid=5ca4c236-106c-49b5-93a4-e031f2bf190e&actionBarEnabled=true&reportCopilotInEmbed=true" allowFullScreen="true"></iframe>
       </div>
-      <a href="#" class="btn btn-outline" style="font-size:0.85rem">Voir le dashboard interactif →</a>
+      <a href="https://app.powerbi.com/links/dGBFehRe6T?ctid=5ca4c236-106c-49b5-93a4-e031f2bf190e&pbi_source=linkShare" target="_blank" class="btn btn-outline" style="font-size:0.85rem">Ouvrir dans Power BI →</a>
     </div>
   </div>
 </div>
