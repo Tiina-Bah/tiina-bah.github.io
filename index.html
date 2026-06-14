@@ -177,6 +177,7 @@
     .livrable-menu a { display: block; padding: 0.55rem 1rem; font-size: 0.82rem; color: var(--text); text-decoration: none; border-bottom: 1px solid var(--border); transition: background 0.15s; }
     .livrable-menu a:last-child { border-bottom: none; }
     .livrable-menu a:hover { background: var(--accent-light); color: var(--accent); }
+    .livrable-cat { display: block; padding: 0.35rem 1rem 0.2rem; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); background: #f8f9fa; border-bottom: 1px solid var(--border); }
     .project-link {
       font-size: 0.78rem; font-weight: 600; color: var(--accent);
       text-decoration: none; display: flex; align-items: center; gap: 0.3rem;
@@ -421,7 +422,7 @@
       </div>
       <div class="project-footer">
         <span class="project-tools">🛠 Excel · TCD · Graphiques</span>
-        <div class="livrable-dropdown"><button class="livrable-btn" onclick="this.closest('.livrable-dropdown').classList.toggle('open')">Voir les livrables →</button><div class="livrable-menu"><a href="livrables/P2_Les_Pionniers_Data_NBA.xlsx" target="_blank">📊 Base de données NBA (Excel)</a><a href="livrables/P2_Les_Pionniers.pdf" target="_blank">📄 Présentation Les Pionniers (PDF)</a></div></div>
+        <div class="livrable-dropdown"><button class="livrable-btn" onclick="this.closest('.livrable-dropdown').classList.toggle('open')">Voir les livrables →</button><div class="livrable-menu"><span class="livrable-cat">Base de données</span><a href="livrables/P2_Les_Pionniers_Data_NBA.xlsx" target="_blank">📊 Base de données NBA (Excel)</a><span class="livrable-cat">Livrable final</span><a href="livrables/P2_Les_Pionniers.pdf" target="_blank">📄 Présentation Les Pionniers (PDF)</a></div></div>
       </div>
     </div>
 
@@ -445,7 +446,7 @@
       </div>
       <div class="project-footer">
         <span class="project-tools">🛠 SQL · SQLite</span>
-        <div class="livrable-dropdown"><button class="livrable-btn" onclick="this.closest('.livrable-dropdown').classList.toggle('open')">Voir les livrables →</button><div class="livrable-menu"><a href="livrables/P3_SQL/P3_Contrats_Clients.xlsx" target="_blank">📊 BDD Contrats clients (Excel)</a><a href="livrables/P3_SQL/P3_Regions.xlsx" target="_blank">📊 BDD Régions (Excel)</a><a href="livrables/P3_SQL/P3_Dictionnaire_Donnees.xlsx" target="_blank">📄 Dictionnaire des données (Excel)</a><a href="livrables/P3_SQL/P3_Schema_Relationnel.png" target="_blank">🗂 Schéma relationnel (PNG)</a><a href="livrables/P3_SQL/P3_Create_Contrat.sql" target="_blank">🛠 CREATE TABLE Contrats (SQL)</a><a href="livrables/P3_SQL/P3_Create_Region.sql" target="_blank">🛠 CREATE TABLE Régions (SQL)</a><a href="livrables/P3_SQL/P3_Update_Alter.sql" target="_blank">🛠 UPDATE / ALTER TABLE (SQL)</a><a href="livrables/P3_SQL/P3_Modelisation_Appartement.sql" target="_blank">🛠 Modélisation appartement (SQL)</a><a href="livrables/P3_SQL/P3_Verif_Contrats.sql" target="_blank">🔍 Vérif nb contrats (SQL)</a><a href="livrables/P3_SQL/P3_Verif_Regions.sql" target="_blank">🔍 Vérif nb régions (SQL)</a><a href="livrables/P3_SQL/P3_Jointure_Filtres.sql" target="_blank">🔍 Jointure + filtres (SQL)</a><a href="livrables/P3_SQL/P3_Jointure_2Filtres.sql" target="_blank">🔍 Jointure 2 filtres (SQL)</a><a href="livrables/P3_SQL/P3_Jointure_Distinctes.sql" target="_blank">🔍 Jointure tables distinctes (SQL)</a><a href="livrables/P3_SQL/P3_Requete_Alpha.sql" target="_blank">🔍 Tri alphabétique (SQL)</a></div></div>
+        <div class="livrable-dropdown"><button class="livrable-btn" onclick="this.closest('.livrable-dropdown').classList.toggle('open')">Voir les livrables →</button><div class="livrable-menu"><span class="livrable-cat">Bases de données</span><a href="livrables/P3_SQL/P3_Contrats_Clients.xlsx" target="_blank">📊 BDD Contrats clients (Excel)</a><a href="livrables/P3_SQL/P3_Regions.xlsx" target="_blank">📊 BDD Régions (Excel)</a><span class="livrable-cat">Modélisation</span><a href="livrables/P3_SQL/P3_Dictionnaire_Donnees.xlsx" target="_blank">📄 Dictionnaire des données (Excel)</a><a href="livrables/P3_SQL/P3_Schema_Relationnel.png" target="_blank">🗂 Schéma relationnel (PNG)</a><span class="livrable-cat">Requêtes SQL — Structure</span><a href="livrables/P3_SQL/P3_Create_Contrat.sql" target="_blank">🛠 CREATE TABLE Contrats</a><a href="livrables/P3_SQL/P3_Create_Region.sql" target="_blank">🛠 CREATE TABLE Régions</a><a href="livrables/P3_SQL/P3_Update_Alter.sql" target="_blank">🛠 UPDATE / ALTER TABLE</a><a href="livrables/P3_SQL/P3_Modelisation_Appartement.sql" target="_blank">🛠 Modélisation appartement</a><span class="livrable-cat">Requêtes SQL — Analyse</span><a href="livrables/P3_SQL/P3_Verif_Contrats.sql" target="_blank">🔍 Vérif nb contrats</a><a href="livrables/P3_SQL/P3_Verif_Regions.sql" target="_blank">🔍 Vérif nb régions</a><a href="livrables/P3_SQL/P3_Jointure_Filtres.sql" target="_blank">🔍 Jointure + filtres</a><a href="livrables/P3_SQL/P3_Jointure_2Filtres.sql" target="_blank">🔍 Jointure 2 filtres</a><a href="livrables/P3_SQL/P3_Jointure_Distinctes.sql" target="_blank">🔍 Jointure tables distinctes</a><a href="livrables/P3_SQL/P3_Requete_Alpha.sql" target="_blank">🔍 Tri alphabétique</a></div></div>
       </div>
     </div>
 
@@ -469,7 +470,7 @@
       </div>
       <div class="project-footer">
         <span class="project-tools">🛠 SQL · Excel · CNIL</span>
-        <div class="livrable-dropdown"><button class="livrable-btn" onclick="this.closest('.livrable-dropdown').classList.toggle('open')">Voir les livrables →</button><div class="livrable-menu"><a href="livrables/P4_Base_Client_RGPD.xlsx" target="_blank">📊 Base client RGPD (Excel)</a><a href="livrables/P4_CRM_Anonymise.csv" target="_blank">📊 CRM anonymisé (CSV)</a><a href="livrables/P4_CRM_RGPD.pdf" target="_blank">📄 Rapport & Recommandations (PDF)</a></div></div>
+        <div class="livrable-dropdown"><button class="livrable-btn" onclick="this.closest('.livrable-dropdown').classList.toggle('open')">Voir les livrables →</button><div class="livrable-menu"><span class="livrable-cat">Bases de données</span><a href="livrables/P4_Base_Client_RGPD.xlsx" target="_blank">📊 Base client RGPD (Excel)</a><a href="livrables/P4_CRM_Anonymise.csv" target="_blank">📊 CRM anonymisé (CSV)</a><span class="livrable-cat">Livrable final</span><a href="livrables/P4_CRM_RGPD.pdf" target="_blank">📄 Rapport & Recommandations (PDF)</a></div></div>
       </div>
     </div>
 
@@ -493,7 +494,7 @@
       </div>
       <div class="project-footer">
         <span class="project-tools">🛠 Excel · Statistiques · PowerPoint</span>
-        <div class="livrable-dropdown"><button class="livrable-btn" onclick="this.closest('.livrable-dropdown').classList.toggle('open')">Voir les livrables →</button><div class="livrable-menu"><a href="livrables/P5_SQL/P5_table_des_retours_clients.sql" target="_blank">🛠 CREATE Table retours clients (SQL)</a><a href="livrables/P5_SQL/P5_Table_des_produits.sql" target="_blank">🛠 CREATE Table des produits (SQL)</a><a href="livrables/P5_SQL/P5_Creation_table_Ref_Magasin.sql" target="_blank">🛠 CREATE Table Ref_Magasin (SQL)</a><a href="livrables/P5_SQL/P5_Number_custumer_feedback.sql" target="_blank">🔍 Nombre de feedbacks (SQL)</a><a href="livrables/P5_SQL/P5_Comptage_Nombre_de_retour_client.sql" target="_blank">🔍 Comptage retours clients (SQL)</a><a href="livrables/P5_SQL/P5_Jointure_produit___retour.sql" target="_blank">🔍 Jointure produit / retour (SQL)</a><a href="livrables/P5_SQL/P5_Top_5_ref_magasin.sql" target="_blank">🔍 Top 5 magasins (SQL)</a><a href="livrables/P5_SQL/P5_13._Methode_CTE_.sql" target="_blank">🔍 Méthode CTE (SQL)</a><a href="livrables/P5_SQL/P5_14B.sql" target="_blank">🔍 Requête avancée (SQL)</a><a href="livrables/P5_Customer_Feedback.pptx" target="_blank">📄 Présentation NPS (PPTX)</a></div></div>
+        <div class="livrable-dropdown"><button class="livrable-btn" onclick="this.closest('.livrable-dropdown').classList.toggle('open')">Voir les livrables →</button><div class="livrable-menu"><span class="livrable-cat">Requêtes SQL — Structure</span><a href="livrables/P5_SQL/P5_table_des_retours_clients.sql" target="_blank">🛠 CREATE Table retours clients</a><a href="livrables/P5_SQL/P5_Table_des_produits.sql" target="_blank">🛠 CREATE Table des produits</a><a href="livrables/P5_SQL/P5_Creation_table_Ref_Magasin.sql" target="_blank">🛠 CREATE Table Ref_Magasin</a><span class="livrable-cat">Requêtes SQL — Analyse</span><a href="livrables/P5_SQL/P5_Number_custumer_feedback.sql" target="_blank">🔍 Nombre de feedbacks</a><a href="livrables/P5_SQL/P5_Comptage_Nombre_de_retour_client.sql" target="_blank">🔍 Comptage retours clients</a><a href="livrables/P5_SQL/P5_Jointure_produit___retour.sql" target="_blank">🔍 Jointure produit / retour</a><a href="livrables/P5_SQL/P5_Top_5_ref_magasin.sql" target="_blank">🔍 Top 5 magasins</a><a href="livrables/P5_SQL/P5_13._Methode_CTE_.sql" target="_blank">🔍 Méthode CTE</a><a href="livrables/P5_SQL/P5_14B.sql" target="_blank">🔍 Requête avancée</a><span class="livrable-cat">Livrable final</span><a href="livrables/P5_Customer_Feedback.pptx" target="_blank">📄 Présentation NPS (PPTX)</a></div></div>
       </div>
     </div>
 
@@ -516,7 +517,7 @@
       </div>
       <div class="project-footer">
         <span class="project-tools">🛠 PowerPoint · Data Viz</span>
-        <div class="livrable-dropdown"><button class="livrable-btn" onclick="this.closest('.livrable-dropdown').classList.toggle('open')">Voir les livrables →</button><div class="livrable-menu"><a href="livrables/P6_Bottleneck/P6_BDD_ERP.xlsx" target="_blank">📊 Base ERP retraitée (Excel)</a><a href="livrables/P6_Bottleneck/P6_BDD_Liaison.xlsx" target="_blank">📊 Base Liaison retraitée (Excel)</a><a href="livrables/P6_Bottleneck/P6_BDD_Web.xlsx" target="_blank">📊 Base Web retraitée (Excel)</a><a href="livrables/P6_Bottleneck/P6_Notebook_Bottleneck.html" target="_blank">📓 Notebook analyse (Jupyter)</a></div></div>
+        <div class="livrable-dropdown"><button class="livrable-btn" onclick="this.closest('.livrable-dropdown').classList.toggle('open')">Voir les livrables →</button><div class="livrable-menu"><span class="livrable-cat">Bases de données</span><a href="livrables/P6_Bottleneck/P6_BDD_ERP.xlsx" target="_blank">📊 Base ERP retraitée (Excel)</a><a href="livrables/P6_Bottleneck/P6_BDD_Liaison.xlsx" target="_blank">📊 Base Liaison retraitée (Excel)</a><a href="livrables/P6_Bottleneck/P6_BDD_Web.xlsx" target="_blank">📊 Base Web retraitée (Excel)</a><span class="livrable-cat">Analyse</span><a href="livrables/P6_Bottleneck/P6_Notebook_Bottleneck.html" target="_blank">📓 Notebook analyse (Jupyter)</a></div></div>
       </div>
     </div>
 
@@ -539,7 +540,7 @@
       </div>
       <div class="project-footer">
         <span class="project-tools">🛠 Canvas · Analyse métier</span>
-        <div class="livrable-dropdown"><button class="livrable-btn" onclick="this.closest('.livrable-dropdown').classList.toggle('open')">Voir les livrables →</button><div class="livrable-menu"><a href="livrables/P7_Product_Strategy_Canvas.docx" target="_blank">📄 Product Strategy Canvas (Word)</a><a href="#dashboards">📊 Aperçu du dashboard</a><a href="https://app.powerbi.com/links/dGBFehRe6T?ctid=5ca4c236-106c-49b5-93a4-e031f2bf190e&pbi_source=linkShare" target="_blank">📄 Dashboard Power BI interactif</a></div></div>
+        <div class="livrable-dropdown"><button class="livrable-btn" onclick="this.closest('.livrable-dropdown').classList.toggle('open')">Voir les livrables →</button><div class="livrable-menu"><span class="livrable-cat">Livrable stratégique</span><a href="livrables/P7_Product_Strategy_Canvas.docx" target="_blank">📄 Product Strategy Canvas (Word)</a><span class="livrable-cat">Dashboard</span><a href="#dashboards">📊 Aperçu du dashboard</a><a href="https://app.powerbi.com/links/dGBFehRe6T?ctid=5ca4c236-106c-49b5-93a4-e031f2bf190e&pbi_source=linkShare" target="_blank">📄 Dashboard Power BI interactif</a></div></div>
       </div>
     </div>
 
@@ -563,7 +564,7 @@
       </div>
       <div class="project-footer">
         <span class="project-tools">🛠 Jupyter Notebook · Pandas · Scikit-learn</span>
-        <div class="livrable-dropdown"><button class="livrable-btn" onclick="this.closest('.livrable-dropdown').classList.toggle('open')">Voir les livrables →</button><div class="livrable-menu"><a href="livrables/P8_Notebook_Regression.html" target="_blank">📓 Notebook Jupyter (régression)</a><a href="livrables/P8_Regression_Notebook.pptx" target="_blank">📊 Fiche présentation (PPTX)</a></div></div>
+        <div class="livrable-dropdown"><button class="livrable-btn" onclick="this.closest('.livrable-dropdown').classList.toggle('open')">Voir les livrables →</button><div class="livrable-menu"><span class="livrable-cat">Analyse</span><a href="livrables/P8_Notebook_Regression.html" target="_blank">📓 Notebook Jupyter (régression)</a><span class="livrable-cat">Livrable final</span><a href="livrables/P8_Regression_Notebook.pptx" target="_blank">📊 Fiche présentation (PPTX)</a></div></div>
       </div>
     </div>
 
@@ -587,7 +588,7 @@
       </div>
       <div class="project-footer">
         <span class="project-tools">🛠 Power BI · Power Query · DAX · SQLite</span>
-        <div class="livrable-dropdown"><button class="livrable-btn" onclick="this.closest('.livrable-dropdown').classList.toggle('open')">Voir les livrables →</button><div class="livrable-menu"><a href="livrables/P9_Dashboard_Bottleneck.pdf" target="_blank">📄 Rapport Bottleneck (PDF)</a><a href="https://app.powerbi.com/links/nHGIfd4X4J?ctid=5ca4c236-106c-49b5-93a4-e031f2bf190e&pbi_source=linkShare" target="_blank">📄 Dashboard Power BI interactif (V1)</a><a href="https://app.powerbi.com/reportEmbed?reportId=021f45db-b486-46d6-bd75-b6588521f2cb&autoAuth=true&ctid=5ca4c236-106c-49b5-93a4-e031f2bf190e" target="_blank">📄 Dashboard Power BI interactif (V2)</a></div></div>
+        <div class="livrable-dropdown"><button class="livrable-btn" onclick="this.closest('.livrable-dropdown').classList.toggle('open')">Voir les livrables →</button><div class="livrable-menu"><span class="livrable-cat">Rapport</span><a href="livrables/P9_Dashboard_Bottleneck.pdf" target="_blank">📄 Rapport Bottleneck (PDF)</a><span class="livrable-cat">Dashboards Power BI</span><a href="https://app.powerbi.com/links/nHGIfd4X4J?ctid=5ca4c236-106c-49b5-93a4-e031f2bf190e&pbi_source=linkShare" target="_blank">📄 Dashboard Power BI interactif (V1)</a><a href="https://app.powerbi.com/reportEmbed?reportId=021f45db-b486-46d6-bd75-b6588521f2cb&autoAuth=true&ctid=5ca4c236-106c-49b5-93a4-e031f2bf190e" target="_blank">📄 Dashboard Power BI interactif (V2)</a></div></div>
       </div>
     </div>
 
@@ -611,7 +612,7 @@
       </div>
       <div class="project-footer">
         <span class="project-tools">🛠 Excel · PowerPoint · RAWG API (440k jeux)</span>
-        <div class="livrable-dropdown"><button class="livrable-btn" onclick="this.closest('.livrable-dropdown').classList.toggle('open')">Voir les livrables →</button><div class="livrable-menu"><a href="livrables/P10_UOI_Games.pptx" target="_blank">📊 Présentation stratégique (PPTX)</a><a href="livrables/P10_BDD_UOI_Games.xlsx" target="_blank">📊 Base de données (Excel)</a></div></div>
+        <div class="livrable-dropdown"><button class="livrable-btn" onclick="this.closest('.livrable-dropdown').classList.toggle('open')">Voir les livrables →</button><div class="livrable-menu"><span class="livrable-cat">Base de données</span><a href="livrables/P10_BDD_UOI_Games.xlsx" target="_blank">📊 Base de données (Excel)</a><span class="livrable-cat">Livrable final</span><a href="livrables/P10_UOI_Games.pptx" target="_blank">📊 Présentation stratégique (PPTX)</a></div></div>
       </div>
     </div>
 
